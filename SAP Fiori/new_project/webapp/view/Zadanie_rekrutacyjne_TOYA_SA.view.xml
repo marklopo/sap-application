@@ -1,0 +1,9 @@
+<mvc:View controllerName="app.customers.newproject.controller.Zadanie_rekrutacyjne_TOYA_SA"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page1" title="{i18n>title}">
+        <content >
+        <Button id="1" text="Customers Data" press="goToCustomersTable"></Button>
+         </content >
+    </Page>
+</mvc:View>

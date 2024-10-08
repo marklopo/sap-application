@@ -1,0 +1,123 @@
+<mvc:View
+	controllerName="app.customers.newproject.controller.Zadanie_rekrutacyjne_TOYA_SA"
+	xmlns="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:smartTable="sap.ui.comp.smarttable"
+	xmlns:sfb="sap.ui.comp.smartfilterbar"
+	xmlns:core="sap.ui.core"
+	xmlns:sv="sap.ui.comp.smartvariants"
+	xmlns:m="sap.m"
+	height="100%">
+
+	<m:Page id="12"
+		showHeader="false"
+		enableScrolling="false"
+		class="sapUiContentPadding">
+
+		<m:content>
+
+			<Table
+				id="table"
+				selectionMode="MultiToggle"
+				rows="{/Customers}"
+				height="100%"
+				ariaLabelledBy="title">
+
+
+				<columns>
+					<Column
+						id="company"
+						width="11rem"
+						sortProperty="CompanyName">
+						<m:Label id="18" text="Company Name" />
+						<template>
+							<m:Text id="19" text="{CompanyName}" wrapping="false" />
+						</template>
+					</Column>
+
+					<Column
+						id="address"
+						width="11rem"
+						showSortMenuEntry="false"
+					>
+						<m:Label id="22" text="Address" />
+						<template>
+							<m:Text id="24" text="{Address}" wrapping="false" />
+						</template>
+					</Column>
+					<Column
+						id="city"
+						width="11rem"
+						showSortMenuEntry="false"
+						filterProperty="City">
+						<m:Label id="20" text="City" />
+						<template>
+							<m:Text id="21" text="{City}" wrapping="false" />
+						</template>
+					</Column>
+
+					<Column
+						id="postalcode"
+						width="11rem"
+						showSortMenuEntry="false"
+					>
+						<m:Label id="27" text="PostalCode" />
+						<template>
+							<m:Text id="28" text="{PostalCode}" wrapping="false" />
+						</template>
+					</Column>
+					<Column
+						id="phone"
+						width="11rem"
+						showSortMenuEntry="false"
+					>
+						<m:Label id="37" text="Phone" />
+						<template>
+							<m:Text id="38" text="{Phone}" wrapping="false" />
+						</template>
+					</Column>
+				</columns>
+
+				<footer>
+					<m:OverflowToolbar id="infobar"></m:OverflowToolbar>
+				</footer>
+			</Table>
+
+		</m:content>
+	</m:Page>
+
+</mvc:View>
+
+<!-- This is the second proposal for solving this task: 
+<mvc:View xmlns:table="sap.ui.table"
+controllerName="app.customers.newproject.controller.Zadanie_rekrutacyjne_TOYA_SA"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:smartTable="sap.ui.comp.smarttable"
+	height="100%">
+    <Page id="page2" title="{i18n>title}">
+        <content>
+ 
+<smartFilterBar:SmartFilterBar id="smartFilterBar" entitySet="Customers" >
+		<smartFilterBar:controlConfiguration>
+			<smartFilterBar:ControlConfiguration id="idCity" label= "city" key="City" filterType="auto">
+				
+			</smartFilterBar:ControlConfiguration>
+			
+		</smartFilterBar:controlConfiguration>
+	</smartFilterBar:SmartFilterBar>
+
+	<smartTable:SmartTable id="idSmartTable" entitySet="Customers" smartFilterId="smartFilterBar"
+tableType="ResponsiveTable"
+		 beforeExport="onBeforeExport" useVariantManagement="false" enableAutoColumnWidth="true"
+		useTablePersonalisation="true" header="Customers" showRowCount="true"
+persistencyKey="SmartTableAnalytical_Explored"
+		enableAutoBinding="true" demandPopin="true" class="sapUiResponsiveContentPadding"
+showDetailsButton="true" detailsButtonSetting="Medium,Low">
+<Table id ="11" />
+    </smartTable:SmartTable>
+
+    </content>
+    </Page>
+</mvc:View> -->
