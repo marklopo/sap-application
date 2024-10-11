@@ -21,7 +21,6 @@
 				id="table"
 				selectionMode="MultiToggle"
 				rows="{/Customers}"
-				height="100%"
 				ariaLabelledBy="title">
 
 
@@ -30,7 +29,7 @@
 						id="company"
 						width="11rem"
 						sortProperty="CompanyName">
-						<m:Label id="18" text="Company Name" />
+						<m:Label id="idCompanyName" text="Company Name" />
 						<template>
 							<m:Text id="19" text="{CompanyName}" wrapping="false" />
 						</template>
@@ -41,9 +40,9 @@
 						width="11rem"
 						showSortMenuEntry="false"
 					>
-						<m:Label id="22" text="Address" />
+						<m:Label id="idAddress" text="Address" />
 						<template>
-							<m:Text id="24" text="{Address}" wrapping="false" />
+							<m:Text id="idTextAddress" text="{Address}" wrapping="false" />
 						</template>
 					</Column>
 					<Column
@@ -51,9 +50,9 @@
 						width="11rem"
 						showSortMenuEntry="false"
 						filterProperty="City">
-						<m:Label id="20" text="City" />
+						<m:Label id="idCity" text="City" />
 						<template>
-							<m:Text id="21" text="{City}" wrapping="false" />
+							<m:Text id="idCityLabel" text="{City}" wrapping="false" />
 						</template>
 					</Column>
 
@@ -62,9 +61,9 @@
 						width="11rem"
 						showSortMenuEntry="false"
 					>
-						<m:Label id="27" text="PostalCode" />
+						<m:Label id="idPostalCode" text="PostalCode" />
 						<template>
-							<m:Text id="28" text="{PostalCode}" wrapping="false" />
+							<m:Text id="idPostalCodeLabel" text="{PostalCode}" wrapping="false" />
 						</template>
 					</Column>
 					<Column
@@ -72,9 +71,9 @@
 						width="11rem"
 						showSortMenuEntry="false"
 					>
-						<m:Label id="37" text="Phone" />
+						<m:Label id="idPhone" text="Phone" />
 						<template>
-							<m:Text id="38" text="{Phone}" wrapping="false" />
+							<m:Text id="idPhoneLabel" text="{Phone}" wrapping="false" />
 						</template>
 					</Column>
 				</columns>
